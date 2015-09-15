@@ -1,0 +1,31 @@
+<div>
+<md-content>
+	<md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" ng-click="home.toggleSideNav()" aria-label="Settings">
+          <md-icon md-svg-icon="images/icons/menu.svg"></md-icon>
+        </md-button>
+        <h2>
+          <span>Polaris - {{home.ctrlName}}</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="More">
+          <md-icon md-svg-icon="images/icons/more_vert.svg"></md-icon>
+        </md-button>
+      </div>
+	</md-toolbar>
+</md-content>
+
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
+  <p>xxxxxxxxxx</p>
+</md-sidenav>
+
+<md-content>
+  <div ui-view="map" style="width:calc(100% - 500px); float:left;">
+  </div>
+  
+  <div ui-view="situations" style="width:500px; float:left;">
+  </div>
+</md-content>
+
+</div>
